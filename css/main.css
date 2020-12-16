@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "empiresregular";
+    src: url("../fonts/empires-webfont.woff2") format("woff2"), url("../fonts/empires-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --main-dark-blue: #1f244f;
+    --main-blue: #4d58be;
+    --main-blue-transparent: #4d58be7e;
+    --main-green: #07cf81;
+    --main-dark-green: #057a4d;
+    --main-font: "Ubuntu", sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+a {
+    text-decoration: none;
+}
+.brand {
+    grid-area: brand;
+}
+.nav {
+    grid-area: nav;
+}
+.content {
+    grid-area: content;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.footer {
+    grid-area: footer;
+    background-color: #057a4d;
+}
+.layout {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 120px 1fr 70px;
+    grid-template-areas:
+        "brand nav nav"
+        "sidebar content content"
+        "footer footer footer";
+}

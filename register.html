@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Watch films with safety and comfort" />
+        <meta property="og:type" content="app" />
+        <meta property="og:title" content="Cinematix" />
+        <meta property="og:description" content="Watch films with safety and comfort" />
+        <meta property="og:site_name" content="Cinematix" />
+
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/loader.css" />
+        <script src="js/urlmapping.js"></script>
+    </head>
+    <body>
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="form-box">
+                <form method="POST" id="signup-form">
+                    <h1>Register</h1>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Email..." id="email" name="email" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name..." id="name" name="name" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password..." id="password" name="password" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="confPassword">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password..." id="confPassword" name="confPassword" required />
+                    </div>
+                    <div class="form-field info">
+                        <p>Already has an account? <a href="/login.html">Login</a></p>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" class="btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/validation.js"></script>
+        <script defer src="js/main.js"></script>
+    </body>
+</html>

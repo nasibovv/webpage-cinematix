@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {%include "partials/meta_tags.html"%}
+
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/brand.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/sidebar.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/nav.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/slider.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/loader.css')}}">
+        {%block css%}{%endblock%}
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <script src="{{url_for('static', filename='js/urlmapping.js')}}"></script>
+    </head>
+    <body>
+        {%include "partials/loader.html"%}
+        <div class="layout">
+            <div class="brand">
+                <a href="/">Cine<span>matix</span></a>
+            </div>
+            <div class="nav">
+                <div class="links">
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-home nav-link-icon"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/about" class="nav-link">
+                        <i class="fas fa-info nav-link-icon"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="/contact" class="nav-link">
+                        <i class="fas fa-phone nav-link-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <!-- <div class="social">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div> -->
+                <div class="account">
+                    <a href="/login" class="account-operations">
+                        <i class="fas fa-sign-in-alt account-operation-icon"></i>
+                        <span>Login / Sign Up</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                {%block content%}
+                {%endblock%}
+            </div>
+            <div class="sidebar">
+                <h2><span>Recommend</span> For You</h2>
+                <div class="film-cards">
+                    
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; 2020 Cinematix</p>
+            </div>
+        </div>
+        <template id="recommendedFilmTemplate">
+            <div class="film-card-part">
+                <div class="film-card">
+                    <div class="film-card-inner">
+                        <div class="film-card-front">
+                            <img src="{image}" alt="" />
+                        </div>
+                        <div class="film-card-back film-card-back-background" style="background-image: url('{image}')"></div>
+                        <div class="film-card-back">
+                            <h3>{name}</h3>
+                            <hr />
+                            <p>IMDB: {imdb}/10</p>
+                            <hr />
+                            <button class="btn-primary">Watch Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template id="sliderFilmTemplate">
+            <div class="wbn-slide">
+                <div class="slide-background" style="background-image: url('{image}')"></div>
+                <img src="{image}" />
+                <div class="wbn-overlay-text">
+                    <span class="wbn-title">{name}</span>
+                    <span class="wbn-year">{year}</span>
+                </div>
+            </div>
+        </template>
+        <script src="{{url_for('static', filename='js/slider.js')}}"></script>
+        <script src="{{url_for('static', filename='js/films.js')}}"></script>
+        <script defer src="{{url_for('static', filename='js/main.js')}}"></script>
+    </body>
+</html>

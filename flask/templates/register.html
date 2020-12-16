@@ -1,0 +1,29 @@
+{%extends "sign_base.html"%}
+{%block form%}
+<form method="POST" id="signup-form">
+    {{form.csrf_token}}
+    <h1>Register</h1>
+    <div class="form-field">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email..." id="email" name="email" required />
+    </div>
+    <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name..." id="name" name="name" required />
+    </div>
+    <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password..." id="password" name="password" required />
+    </div>
+    <div class="form-field">
+        <label for="confPassword">Confirm Password</label>
+        <input type="password" placeholder="Confirm Password..." id="confPassword" name="confPassword" required />
+    </div>
+    <div class="form-field info">
+        <p>Already has an account? <a href="/login">Login</a></p>
+    </div>
+    <div class="form-field">
+        <button type="submit" class="btn-primary" >Register</button>
+    </div>
+</form>
+{%endblock%}

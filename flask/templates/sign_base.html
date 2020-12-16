@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {%include "partials/meta_tags.html"%}
+
+        <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/loader.css')}}" />
+        <script src="{{url_for('static', filename='js/urlmapping.js')}}"></script>
+    </head>
+    <body>
+        {%include "partials/loader.html"%}
+        <div class="container">
+            <div class="brand"></div>
+            <div class="form-box">
+                {%block form%}
+                {%endblock%}
+            </div>
+        </div>
+        <script src="{{url_for('static', filename='js/validation.js')}}"></script>
+        <script defer src="{{url_for('static', filename='js/main.js')}}"></script>
+    </body>
+</html>

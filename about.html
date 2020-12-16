@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Watch films with safety and comfort" />
+        <meta property="og:type" content="app" />
+        <meta property="og:title" content="Cinematix" />
+        <meta property="og:description" content="Watch films with safety and comfort" />
+        <meta property="og:site_name" content="Cinematix" />
+
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/brand.css" />
+        <link rel="stylesheet" href="css/sidebar.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/slider.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/loader.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <script src="js/urlmapping.js"></script>
+    </head>
+    <body>
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="layout">
+            <div class="brand">
+                <a href="/">Cine<span>matix</span></a>
+            </div>
+            <div class="nav">
+                <div class="links">
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-home nav-link-icon"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/about.html" class="nav-link">
+                        <i class="fas fa-info nav-link-icon"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="/contact.html" class="nav-link">
+                        <i class="fas fa-phone nav-link-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <!-- <div class="social">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div> -->
+                <div class="account">
+                    <a href="/login.html" class="account-operations">
+                        <i class="fas fa-sign-in-alt account-operation-icon"></i>
+                        <span>Login / Sign Up</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <h1>About Us</h1>
+                <p>Cinematix is a film website. It is founded by Vidadi Nasibov, in 2020. Our job is to give you a safety and comfortable experience.</p>
+
+                <h3>Which movies you can find?</h3>
+                <p>You love Thriller, Sci-Fi or Drama? You can find too many best and latest films on this website. We select all the films specially to make you enjoy.</p>
+            </div>
+            <div class="sidebar">
+                <h2><span>Recommend</span> For You</h2>
+                <div class="film-cards"></div>
+            </div>
+            <div class="footer">
+                <p>&copy; 2020 Cinematix</p>
+            </div>
+        </div>
+        <template id="recommendedFilmTemplate">
+            <div class="film-card-part">
+                <div class="film-card">
+                    <div class="film-card-inner">
+                        <div class="film-card-front">
+                            <img src="{image}" alt="" />
+                        </div>
+                        <div class="film-card-back film-card-back-background" style="background-image: url('{image}')"></div>
+                        <div class="film-card-back">
+                            <h3>{name}</h3>
+                            <hr />
+                            <p>IMDB: {imdb}/10</p>
+                            <hr />
+                            <button class="btn-primary">Watch Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script src="js/main.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/films.js"></script>
+    </body>
+</html>

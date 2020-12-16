@@ -1,0 +1,13 @@
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    color: var(--main-dark-blue);
+    font-family: var(--main-font);
+}
+.content {
+    padding: 20px 40px;
+}
+.content p {
+    font-family: var(--main-font);
+}

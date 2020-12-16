@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "empiresregular";
+    src: url("../fonts/empires-webfont.woff2") format("woff2"), url("../fonts/empires-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --main-dark-blue: #1f244f;
+    --main-dark-blue-transparent: #1f244fec;
+    --main-green: #07cf81;
+    --main-dark-green: #057a4d;
+    --main-font: "Ubuntu", sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    height: 100vh !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+    transform: scale(1.5);
+    background-image: url("../images/netflix_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.form-box {
+    background-color: white;
+    width: 500px;
+    z-index: 5;
+    /* height: 300px; */
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+form h1 {
+    font-family: var(--main-font);
+    color: var(--main-dark-blue);
+}
+.form-field {
+    width: 100%;
+    padding: 10px 0 20px 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+.form-field.info{
+    padding: 10px 0 20px 0;
+    padding: 0;
+}
+.form-field label{
+    font-size: 21px;
+}
+.form-field input {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ececec;
+    outline: none;
+    font-size: 18px;
+    margin-top:10px;
+}
+.form-field textarea {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ececec;
+    outline: none;
+}
+.form-field button {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: var(--main-green);
+    border-radius: 10px;
+}
+*::-webkit-input-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder,
+*::placeholder {
+    font-family: var(--main-font) !important;
+}
+
+.btn-primary {
+    background-color: var(--main-green);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid var(--main-green);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.btn-primary:hover {
+    background-color: var(--main-dark-green);
+    border: 2px solid var(--main-dark-green);
+}

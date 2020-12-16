@@ -1,0 +1,19 @@
+.brand {
+    background-color: var(--main-dark-blue);
+    padding:20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand > a {
+    font-family: "empiresregular";
+    font-size: 110px;
+    vertical-align: middle;
+    color: white;
+}
+
+.brand > a > span{
+    color: var(--main-green);
+}

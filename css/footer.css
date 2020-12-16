@@ -1,0 +1,14 @@
+.footer{
+    background:var(--main-green);
+    color:white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer p{
+    position: relative;
+    font-size: 20px;
+    font-family: var(--main-font);
+}

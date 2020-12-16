@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Watch films with safety and comfort" />
+        <meta property="og:type" content="app" />
+        <meta property="og:title" content="Cinematix" />
+        <meta property="og:description" content="Watch films with safety and comfort" />
+        <meta property="og:site_name" content="Cinematix" />
+
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/loader.css" />
+        <script src="js/urlmapping.js"></script>
+    </head>
+    <body>
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="brand"></div>
+            <div class="form-box">
+                <form method="POST" id="login-form">
+                    <h1>Login</h1>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Email..." id="email" name="email" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password..." id="password" name="password" required />
+                    </div>
+                    <div class="form-field info">
+                        <p>Not have an account? <a href="/register.html">Create one</a></p>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" class="btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/validation.js"></script>
+        <script defer src="js/main.js"></script>
+    </body>
+</html>

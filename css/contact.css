@@ -1,0 +1,122 @@
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    color: var(--main-dark-blue);
+    margin-left: 20px;
+    font-family: var(--main-font);
+}
+.content {
+    padding: 20px;
+    background-image: url('../images/contact_background.png');
+    background-size: 200px 200px,cover;
+
+}
+.content p {
+    font-family: var(--main-font);
+}
+form {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+form h1 {
+    font-family: var(--main-font);
+    color: var(--main-dark-blue);
+}
+.form-field {
+    width: 100%;
+    padding: 10px 0 20px 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+.form-field.info {
+    padding: 10px 0 20px 0;
+    padding: 0;
+}
+.form-field label {
+    font-size: 21px;
+}
+.form-field input {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ececec;
+    outline: none;
+    font-size: 18px;
+    font-family: var(--main-font);
+    margin-top: 10px;
+}
+.form-field textarea {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ececec;
+    outline: none;
+    font-size: 18px;
+    font-family: var(--main-font);
+    margin-top: 10px;
+}
+.form-field button {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: var(--main-green);
+    border-radius: 10px;
+}
+*::-webkit-input-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder,
+*::placeholder {
+    font-family: var(--main-font) !important;
+}
+
+.btn-primary {
+    background-color: var(--main-green);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid var(--main-green);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.btn-primary:hover {
+    background-color: var(--main-dark-green);
+    border: 2px solid var(--main-dark-green);
+}
+.contact-inner {
+    display: flex;
+    flex-direction: row;
+}
+.contact-infos {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+}
+.contact-infos > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-infos > ul > li {
+    padding: 10px 0px;
+}
+.contact-infos > ul > li > a {
+    color: #bbb;
+    font-size: 23px;
+    font-family: var(--main-font);
+}
+.facebook-link:hover {
+    color: #3b5998;
+}
+.instagram-link:hover {
+    background-image: linear-gradient(15deg, #fbad50, #e95950, #cd486b, #bc2a8d, #8a3ab9, #4c68d7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.twitter-link:hover {
+    color: #1da1f2;
+}
+.email-link:hover{
+    color:#bb001b;
+}

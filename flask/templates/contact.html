@@ -1,0 +1,49 @@
+{%extends "page_base.html"%} {%block css%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}">
+{%endblock%}
+{%block content%}
+<h1>Contact</h1>
+<div class="contact-inner">
+    <form method="POST" id="contact-form">
+        <div class="form-field name">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name..." id="name" name="name" required />
+        </div>
+        <div class="form-field surname">
+            <label for="surname">Surname</label>
+            <input type="text" placeholder="Surname..." id="surname" name="surname" required />
+        </div>
+        <div class="form-field email">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email..." id="email" name="email" required />
+        </div>
+        <div class="form-field title">
+            <label for="title">Title</label>
+            <input type="text" placeholder="Title..." id="title" name="title" required />
+        </div>
+        <div class="form-field message">
+            <label for="message">Message</label>
+            <textarea placeholder="Message..." id="message" name="message" required rows="5"></textarea>
+        </div>
+        <div class="form-field">
+            <button type="submit" class="btn-primary">SEND</button>
+        </div>
+    </form>
+    <div class="contact-infos">
+        <ul>
+            <li>
+                <a class="facebook-link" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            </li>
+            <li>
+                <a class="instagram-link" href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+                <a class="twitter-link" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a class="email-link" href="mailto:vnasibov7929@ada.edu.az" target="_blank"><i class="far fa-envelope"></i> E-mail</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{%endblock%}

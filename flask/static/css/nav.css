@@ -1,0 +1,91 @@
+.nav {
+    background-color: var(--main-green);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.nav > .links {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between;   */
+    align-items: center;
+    
+}
+.nav-link {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-family: var(--main-font);
+    transition: 0.3s all ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+.nav-link:hover{
+    color:var(--main-dark-blue);
+}
+.nav-link-icon {
+    font-size: 25px;
+}
+.nav > .search{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.nav > .search input{
+    width: 100%;
+    padding: 10px 15px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    outline:none!important;
+    border-radius: 20px;
+    border:none;
+    font-size: 16px;
+    color:#2a2a2a;
+    position: relative;
+}
+.social{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social > a{
+    color:white;
+    font-size: 25px;
+    padding: 7.5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    transition: 0.3s all ease;
+    border-radius: 7.5px;
+}
+.social > a:hover{
+    background-color:var(--main-dark-blue);
+}
+
+.nav > .account {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 3;
+}
+.account-operations {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-family: var(--main-font);
+    transition: 0.3s all ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.account-operations:hover{
+    color:var(--main-dark-blue);
+}
+.account-operation-icon {
+    font-size: 25px;
+}
